@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/counterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter: 0"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counterTextView"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/buttonActivityB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="switchActivityB"
+            android:text="Switch to Activity B" />
+
+        <Button
+            android:id="@+id/buttonActivityC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch to Activity C"
+            android:onClick="switchActivityC"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonOpenDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="openDialog"
+            android:text="Open Dialog" />
+
+        <Button
+            android:id="@+id/buttonCloseDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close Dialog"
+            android:onClick="closeDialog"
+            android:layout_centerInParent="true"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
